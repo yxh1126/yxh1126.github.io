@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>~yihuang</title>
+  <meta name="description" content="Yi Huang (Timothy) — Staff Embedded Security Engineer. Secure Boot, Firmware, Systems Architecture." />
+  <script type="module" crossorigin src="/assets/index-jnZBWV_Y.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-kHJ-D0s7.css">
+</head>
+
+<body>
+  <!-- CRT pixel misalignment (the "smudge" you liked from the first version): a
+       smooth feTurbulence field drives feDisplacementMap at a small scale, so
+       pixels shift a hair organically — text stays sharp and clear (no blur,
+       no background noise), just a subtle painted misalignment. Uses in-filter
+       turbulence directly (no feImage / external PNG → Safari-friendly), no
+       radial barrel (no corner distortion), region pinned to the box (no
+       offset "ghost"). -->
+  <svg class="defs-only" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="crt-smudge" color-interpolation-filters="sRGB"
+              x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" seed="5" result="noise"></feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="4"
+                           xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+      </filter>
+    </defs>
+  </svg>
+  <div id="app">
+    <div id="term-host">
+      <div id="term-screen"></div>
+    </div>
+  </div>
+  <noscript><pre># Yi Huang (Timothy) yi.huang2027@gmail.com
+
+```plain
+█   █ ███    █   █ █   █  ███  █   █  ███
+█   █  █     █   █ █   █ █   █ ██  █ █   █
+ █ █   █     █████ █   █ █████ █ █ █ █   █
+  █    █     █   █ █   █ █   █ █  ██ █  ██
+  █   ███    █   █  ███  █   █ █   █  ███
+```
+
+
+**Staff Embedded Security Engineer** · Secure Boot · Firmware · Systems Architecture
+
+> 👤 [Bio](#bio) · 🛠 [Skills](#skills) · 💼 [Experience](#experience)
+> 🧩 [Projects](#projects) · 🎓 [Education](#education) · 📄 [Resume](#resume)
+>
+> ✉️ yi.huang2027@gmail.com · ☎ (585) 957-1590
+> 🔗 [LinkedIn](https://www.linkedin.com/in/yhtim) · [GitHub](https://github.com/yxh1126)
+
+*I breathe life into cold hardware — Secure Boot, firmware, and the
+systems architecture underneath them.*
+
+- This page doubles as a shell.
+  Try: `bio`, `help`, `tree bin/ | less`.
+
+Last update: Tue Sep 22 2026</pre></noscript>
+</body>
+
+</html>
