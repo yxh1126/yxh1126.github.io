@@ -1,0 +1,86 @@
+/* A4-paper terminal: the page is a desk; the content lives on a centered
+   sheet of paper (210mm wide, ~A4 proportions) that grows downward as the
+   terminal emits more output — the width never changes. */
+
+:root {
+  --paper: #fdfdfa;
+  --ink: #2e3338;
+  --desk-top: #e4e4e0;
+  --desk-bottom: #b9b9b4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* the desk the paper sits on */
+html, body {
+  min-height: 100vh;
+  display: flow-root; /* keep #paper's margins inside the painted background */
+  font-family: "SFMono-Regular", "Menlo", "Consolas", "DejaVu Sans Mono",
+    "Liberation Mono", monospace;
+  background: linear-gradient(180deg, var(--desk-top), var(--desk-bottom));
+  background-attachment: fixed;
+}
+
+/* the sheet of paper */
+#paper {
+  position: relative;
+  width: min(794px, 96vw);            /* 210mm at 96dpi */
+  min-height: min(1123px, 92vh);      /* 297mm at 96dpi */
+  margin: clamp(20px, 4vh, 56px) auto clamp(60px, 10vh, 120px);
+  padding: clamp(28px, 5vw, 64px) clamp(24px, 5vw, 64px);
+  background: var(--paper);
+  border-radius: 2px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.14),
+    0 10px 32px rgba(0, 0, 0, 0.14),
+    0 24px 64px rgba(0, 0, 0, 0.18);
+}
+
+/* paper grain — fractal-noise overlay over the whole sheet */
+#paper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+}
+
+/* faint warm tint toward the sheet edges, like slightly aged stock */
+#paper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 40%,
+    rgba(0, 0, 0, 0) 55%, rgba(120, 100, 60, 0.035) 100%);
+}
+
+#term-screen { position: relative; z-index: 1; }
+
+/* xterm tweaks: let the sheet (and its grain) be the background */
+.xterm {
+  padding: 0;
+}
+
+.xterm .xterm-viewport {
+  background-color: transparent !important;
+  overflow-y: auto !important;
+}
+
+/* noscript fallback: same paper look */
+#fallback {
+  position: relative;
+  width: min(794px, 96vw);
+  min-height: min(1123px, 92vh);
+  margin: clamp(20px, 4vh, 56px) auto;
+  padding: clamp(28px, 5vw, 64px) clamp(24px, 5vw, 64px);
+  background: var(--paper);
+  border-radius: 2px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.18);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.5;
+  overflow: auto;
+}
