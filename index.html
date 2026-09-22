@@ -4,37 +4,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='2' fill='%23fafafa'/><text x='8' y='12' font-size='10' text-anchor='middle' fill='%232e3338' font-family='monospace'>&gt;_</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/style.css" />
   <title>~yihuang</title>
   <meta name="description" content="Yi Huang (Timothy) — Staff Embedded Security Engineer. Secure Boot, Firmware, Systems Architecture." />
-  <link rel="stylesheet" href="vendor/xterm.css" />
-  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div id="paper">
-    <div id="term-screen"></div>
+  <!-- CRT pixel misalignment (the "smudge" you liked from the first version): a
+       smooth feTurbulence field drives feDisplacementMap at a small scale, so
+       pixels shift a hair organically — text stays sharp and clear (no blur,
+       no background noise), just a subtle painted misalignment. Uses in-filter
+       turbulence directly (no feImage / external PNG → Safari-friendly), no
+       radial barrel (no corner distortion), region pinned to the box (no
+       offset "ghost"). -->
+  <svg class="defs-only" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="crt-smudge" color-interpolation-filters="sRGB"
+              x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" seed="5" result="noise"></feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="4"
+                           xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+      </filter>
+    </defs>
+  </svg>
+  <div id="app">
+    <div id="term-host">
+      <div id="term-screen"></div>
+    </div>
   </div>
-
-  <noscript><pre id="fallback">
- Yi Huang (Timothy) — Staff Embedded Security Engineer
-
- yi.huang2027@gmail.com | (585) 957-1590
- linkedin.com/in/yhtim  | github.com/yxh1126
-
- Summary:
-   An engineer dedicated to mastering Low-Level Principles in an era
-   where "Code is Cheap". A self-driven person who thrives on breathing
-   life into cold hardware. Working as an Embedded Security Engineer
-   not because it's a career, but driven by a deep passion for Firmware
-   Development, Systems Architecture, and Hardware Security.
-
- (this page doubles as a shell — enable JavaScript and try: help)
-  </pre></noscript>
-
-  <script src="vendor/xterm.js"></script>
-  <script src="vendor/xterm-addon-fit.js"></script>
-  <script src="main.js"></script>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
