@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import { contentPlugin } from './scripts/content-plugin';
+import { contentPlugin } from './scripts/content-plugin.ts';
 
 // jiangyy.github.io is a user page → served from root.
 export default defineConfig({

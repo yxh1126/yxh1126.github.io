@@ -5,7 +5,7 @@
 //   readable over a plain HTTP fetch (curl, no-JS clients) — the body is otherwise
 //   a JS-rendered terminal that looks empty in the raw HTML.
 import type { Plugin } from 'vite';
-import { buildContent } from './build-content';
+import { buildContent } from './build-content.ts';
 
 export function contentPlugin(): Plugin {
   // Home-page body, captured whenever content is (re)built, so transformIndexHtml

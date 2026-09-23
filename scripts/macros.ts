@@ -13,7 +13,7 @@
 // Inside any OTHER fenced code block (e.g. the ASCII-art logo's ```plain),
 // `{{...}}` is left untouched — code blocks are passed through verbatim.
 // An unknown macro name is a build error so typos surface immediately.
-import { renderTex } from './tex';
+import { renderTex } from './tex.ts';
 
 const INLINE_MACRO = /\{\{\s*(\w+)\s*\(([^)]*)\)\s*\}\}/g;
 

@@ -11,8 +11,8 @@
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { join, basename, relative, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { AppDecl, Document, Manifest } from '../src/content/types';
-import { expandMacros } from './macros';
+import type { AppDecl, Document, Manifest } from '../src/content/types.ts';
+import { expandMacros } from './macros.ts';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..');
