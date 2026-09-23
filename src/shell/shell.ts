@@ -71,8 +71,8 @@ export class Shell {
   private promptFor(): { text: string; width: number } {
     const loc = '/' + this.cwd; // cwd is '' at root → '/'
     return {
-      text: `\x1b[38;5;62myihuang\x1b[0m:\x1b[38;5;33m${loc}\x1b[0m\x1b[38;5;244m$\x1b[0m `,
-      width: `yihuang:${loc}$ `.length,
+      text: `\x1b[38;5;62myi.huang\x1b[0m:\x1b[38;5;33m${loc}\x1b[0m\x1b[38;5;244m$\x1b[0m `,
+      width: `yi.huang:${loc}$ `.length,
     };
   }
 
@@ -150,7 +150,7 @@ export class Shell {
     this.history.push(trimmed);
 
     const segments = splitPipe(trimmed);
-    document.title = `~yihuang: ${trimmed}`;
+    document.title = `~yi.huang: ${trimmed}`;
     let stdin = '';
     for (let i = 0; i < segments.length; i++) {
       const argv = parseLine(segments[i]);
