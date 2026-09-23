@@ -2,7 +2,7 @@
 
 Yi Huang (Timothy)
 Staff Embedded Security Engineer
-yi.huang2027@gmail.com · (585) 957-1590
+yi.huang@inceptioglobal.ai
 linkedin.com/in/yhtim · github.com/yxh1126
 
 ## Summary
