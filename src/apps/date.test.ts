@@ -6,7 +6,7 @@ import { date } from './date';
 /** Run a command with a stdout that captures printed lines. */
 async function capture(cmd: Command, argv: string[]): Promise<string[]> {
   const lines: string[] = [];
-  await cmd.run({ stdout: { print: (s) => void lines.push(s) } } as never, argv);
+  await cmd.run({ stdout: { print: (s: string) => void lines.push(s) } } as never, argv);
   return lines;
 }
 
