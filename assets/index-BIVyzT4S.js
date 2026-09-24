@@ -137,7 +137,7 @@ Architecture, and Hardware Security.*
 - This page doubles as a shell.
   Try: \`bio\`, \`help\`, \`tree bin/ | less\`.
 
-Last update: Wed Sep 23 2026`,path:`index.md`,kind:`page`,apps:[]},{slug:`projects`,title:`Projects`,body:`# Projects
+Last update: Fri Sep 25 2026`,path:`index.md`,kind:`page`,apps:[]},{slug:`projects`,title:`Projects`,body:`# Projects
 
 ## Secure Lightweight Storage Engine
 
