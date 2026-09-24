@@ -15,8 +15,9 @@ import { exit } from './exit';
 import { whoami } from './whoami';
 import { date } from './date';
 import { echo } from './echo';
+import { home } from './home';
 
 /** Built-in /bin command set. Register more apps here — that's the only wiring. */
 export const builtinApps: Command[] = [
-  ls, cat, head, tail, grep, find, tree, more, less, cd, pwd, wc, clear, exit, whoami, date, echo,
+  ls, cat, head, tail, grep, find, tree, more, less, cd, pwd, wc, clear, exit, whoami, date, echo, home,
 ];

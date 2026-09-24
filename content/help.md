@@ -19,6 +19,7 @@ and tools live in `/bin`.
 - `wc`          count lines/words/bytes from stdin
 - `date`        print the current date and time
 - `echo`        display a line of text (`echo hello world`)
+- `home`        open the home page (same as `index`)
 - `exit`        return to the home page (same as Ctrl-D on an empty line)
 
 ## tips
