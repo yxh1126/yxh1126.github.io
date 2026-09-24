@@ -16,7 +16,7 @@ Santa Clara, CA · Oct. 2020 - Aug. 2021
 - Endorsement Key Certificate verification for firmware based TPM (Trusted Platform Module).
 - Regression Test for firmware TPM functionality on Microsoft Windows.
 
-## Cybersecurity Software Engineer · Magna International
+## Cybersecurity Software Engineer · Magna Electronics
 
 Auburn Hills, MI · Nov. 2019 - Sep. 2020
 

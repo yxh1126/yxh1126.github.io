@@ -37,7 +37,7 @@ Security.
   - Endorsement Key Certificate verification for firmware based TPM (Trusted
     Platform Module).
   - Regression Test for firmware TPM functionality on Microsoft Windows.
-- **Cybersecurity Software Engineer, Magna International, Auburn Hills, MI**
+- **Cybersecurity Software Engineer, Magna Electronics, Auburn Hills, MI**
   (Nov. 2019 - Sep. 2020)
   - In-vehicle key management based on SHE (Secure Hardware Extension)
     specification.
@@ -47,7 +47,7 @@ Security.
   - Vehicle ECU software development, including feature design, development,
     code review, and testing.
 
-## Projects
+## Key Projects
 
 - **Secure Lightweight Storage Engine** (C, Filesystem, Cryptography, Unix
   Kernel; Feb. 2026 - Present)
@@ -69,9 +69,9 @@ Security.
 
 ## Education
 
-- **Rochester Institute of Technology**, Rochester, NY —
+- **Rochester Institute of Technology**, Rochester, NY
   Master of Science in Computer Science, 2016
-- **Beihang University**, Beijing, China —
+- **Beihang University**, Beijing, China
   Master of Engineering in Electronic and Communication Engineering, 2013
-- **Beihang University**, Beijing, China —
+- **Beihang University**, Beijing, China
   Bachelor of Engineering in Integrated Circuit Design, 2010
