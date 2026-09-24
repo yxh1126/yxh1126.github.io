@@ -29,4 +29,4 @@ Architecture, and Hardware Security.*
 - This page doubles as a shell.
   Try: `bio`, `help`, `tree bin/ | less`.
 
-Last update: {{ displayDate(2026, 9, 23) }}
+Last update: {{ displayDate(2026, 9, 25) }}
