@@ -22,7 +22,7 @@ various system-on-chip (SoC) architectures — building the trust chain of
 embedded systems, from Secure Boot and Secure OTA to identity authentication
 for the autonomous driving platforms.
 
-## AMD
+## Advanced Micro Devices
 
 Prior to joining Inceptio, I was at **[AMD](https://www.amd.com/)**. In that role, my work focused on
 firmware-based TPM verification, where I developed and executed test suites
@@ -34,7 +34,7 @@ silicon level.
 Before that: Vehicle engine control software at **[Delphi Technologies](https://en.wikipedia.org/wiki/Delphi_Technologies)**,
 and [AUTOSAR](https://www.autosar.org/) Secure Boot and Secure Onboard Communication at **[Magna Electronics](https://www.magna.com/company/company-information/magna-groups/magna-electronics)**.
 
-## Summary
+## Day-to-Day Work
 
 Throughout these experiences, my day-to-day responsibilities consistently
 involve writing low-level software in C, C++, Bash and Python. My work
@@ -42,6 +42,8 @@ requires navigating the boundaries between hardware and software, developing
 within the Linux kernel as well as real-time embedded environments, and
 implementing industry-standard cryptographic standards to protect system
 integrity.
+
+## Summary
 
 I care about the whole stack — from a silicon's Unique Key, through
 Bootloaders and Device Trees, to the OpenSSL Provider an application
