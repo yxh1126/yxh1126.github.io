@@ -16,28 +16,67 @@ var e=(e,t)=>()=>(t||(e((t={exports:{}}).exports,t),e=null),t.exports);(function
 `+s.join(`  `)+`\r
 `),this.redraw()}replaceWord(e,t){this.buffer=this.buffer.slice(0,e)+t+this.buffer.slice(this.cursor),this.cursor=e+t.length,this.redraw()}redraw(){this.term.write(`\r\x1b[0K${this.curPrompt}${this.buffer}`);let e=S(this.buffer)-S(this.buffer.slice(0,this.cursor));e>0&&this.term.write(`\x1b[${e}D`)}gotoCursor(){this.term.write(`\x1b[${this.curWidth+S(this.buffer.slice(0,this.cursor))+1}G`)}},O={documents:[{slug:`bio`,title:`Bio`,body:`# Bio
 
-An engineer dedicated to mastering Low-Level Principles in an era where
-"Code is Cheap". A self-driven person who thrives on breathing life into
-cold hardware. Working as an Embedded Security Engineer not because it's
-a career, but driven by a deep passion for Firmware Development, Systems
-Architecture, and Hardware Security.
+Hi, I'm Yi Huang. I am an **Embedded Systems and Firmware Engineer**, and my
+work focuses on low-level systems architecture and hardware-level security.
+I'm an engineer dedicated to mastering Low-Level Principles in an era where
+"Code is Cheap", and a self-driven person who thrives on breathing life into
+cold hardware.
 
-I build the trust chain of embedded systems: Secure Boot and Secure OTA
-across diverse SoC architectures, hardware-rooted key management
-(TPM, TEE, HSM/SHE), and identity authentication for autonomous driving
-platforms. Before that: ECU software at Delphi, AUTOSAR Secure Boot at
-Magna, and Firmware TPM work at AMD.
+## Inceptio Technology
+
+Currently, I am at **[Inceptio Technology](https://en.inceptio.ai/)**, where my primary responsibility is
+executing the hardware bring-up for Autonomous Driving Control Units (ADCUs).
+
+A major component of my role involves designing and implementing
+**Hardware Security Solutions**. This includes integrating Trusted Platform
+Modules (TPMs), Trusted Execution Environments (TEEs), and Hardware Security
+Modules (HSMs) to manage secure data storage and secure communication
+protocols.
+
+Additionally, I develop and deploy custom secure boot flows tailored to
+various system-on-chip (SoC) architectures — building the trust chain of
+embedded systems, from Secure Boot and Secure OTA to identity authentication
+for the autonomous driving platforms.
+
+## Advanced Micro Devices
+
+Prior to joining Inceptio, I was at **[AMD](https://www.amd.com/)**. In that role, my work focused on
+firmware-based TPM verification, where I developed and executed test suites
+to validate cryptographic functions and secure protocol compliance at the
+silicon level.
+
+## Early Career
+
+Before that: Vehicle engine control software at **[Delphi Technologies](https://en.wikipedia.org/wiki/Delphi_Technologies)**,
+and [AUTOSAR](https://www.autosar.org/) Secure Boot and Secure Onboard Communication at **[Magna Electronics](https://www.magna.com/company/company-information/magna-groups/magna-electronics)**.
+
+## Day-to-Day Work
+
+Throughout these experiences, my day-to-day responsibilities consistently
+involve writing low-level software in C, C++, Bash and Python. My work
+requires navigating the boundaries between hardware and software, developing
+within the Linux kernel as well as real-time embedded environments, and
+implementing industry-standard cryptographic standards to protect system
+integrity.
+
+## Summary
 
 I care about the whole stack — from a silicon's Unique Key, through
 Bootloaders and Device Trees, to the OpenSSL Provider an application
 developer actually calls. If it runs close to the bare metal, I've probably
 debugged it at 3am.`,path:`bio.md`,kind:`page`,apps:[]},{slug:`education`,title:`Education`,body:`# Education
 
-- **Rochester Institute of Technology** · Rochester, NY
+## Master
+
+**Rochester Institute of Technology** · Rochester, NY
   Master of Science in Computer Science · 2016
-- **Beihang University** · Beijing, China
+
+**Beihang University** · Beijing, China
   Master of Engineering in Electronic and Communication Engineering · 2013
-- **Beihang University** · Beijing, China
+
+## Bachelor
+
+**Beihang University** · Beijing, China
   Bachelor of Engineering in Integrated Circuit Design · 2010`,path:`education.md`,kind:`page`,apps:[]},{slug:`experience`,title:`Experience`,body:`# Experience
 
 ## Staff Embedded Security Engineer · Inceptio Technology
@@ -56,7 +95,7 @@ Santa Clara, CA · Oct. 2020 - Aug. 2021
 - Endorsement Key Certificate verification for firmware based TPM (Trusted Platform Module).
 - Regression Test for firmware TPM functionality on Microsoft Windows.
 
-## Cybersecurity Software Engineer · Magna International
+## Cybersecurity Software Engineer · Magna Electronics
 
 Auburn Hills, MI · Nov. 2019 - Sep. 2020
 
@@ -67,10 +106,10 @@ Auburn Hills, MI · Nov. 2019 - Sep. 2020
 
 Troy, MI · Jul. 2016 - Nov. 2019
 
-- Vehicle ECU software development, including feature design, development, code review, and testing.`,path:`experience.md`,kind:`page`,apps:[]},{slug:`help`,title:`Help`,body:"# Help\n\nThis site is a terminal. Documents are commands — `index`, `help`, `resume` —\nand tools live in `/bin`.\n\n## commands\n\n- `ls [dir]`    list a directory (try `ls /bin`)\n- `cat <path>`  print a document (no clear; pipe-friendly)\n- `head [path]` first lines (`head -n 5 resume`, `cat resume | head`)\n- `tail [path]` last lines (`tail -n 3 resume`)\n- `grep <pat>`  filter lines (`cat resume | grep secure`)\n- `find [path]` walk the FS (`find /bin -type f`, `find -name resume`)\n- `tree [path]` draw the FS as a tree\n- `more [path]` page a document or stdin (space/b/q)\n- `less [path]` same pager, with PageUp/PageDown\n- `cd <dir>`    change directory (`cd /bin`, `cd ..`, `cd /`)\n- `clear`       clear the screen\n- `wc`          count lines/words/bytes from stdin\n- `date`        print the current date and time\n- `echo`        display a line of text (`echo hello world`)\n- `exit`        return to the home page (same as Ctrl-D on an empty line)\n\n## tips\n\n- Run a page like `resume` to open it (clears the screen).\n- Pipes work: `cat resume | wc -l`.\n- Paths: `./projects`, `/help`, `../`.\n- History: ↑/↓ or Ctrl-P/N. Cancel: Ctrl-C. Clear: Ctrl-L.",path:`help.md`,kind:`page`,apps:[]},{slug:`index`,title:`黄毅 yi.huang@inceptioglobal.ai`,body:`# 黄毅 yi.huang@inceptioglobal.ai
+- Vehicle ECU software development, including feature design, development, code review, and testing.`,path:`experience.md`,kind:`page`,apps:[]},{slug:`help`,title:`Help`,body:"# Help\n\nThis site is a terminal. Documents are commands — `index`, `help`, `resume` —\nand tools live in `/bin`.\n\n## commands\n\n- `ls [dir]`    list a directory (try `ls /bin`)\n- `cat <path>`  print a document (no clear; pipe-friendly)\n- `head [path]` first lines (`head -n 5 resume`, `cat resume | head`)\n- `tail [path]` last lines (`tail -n 3 resume`)\n- `grep <pat>`  filter lines (`cat resume | grep secure`)\n- `find [path]` walk the FS (`find /bin -type f`, `find -name resume`)\n- `tree [path]` draw the FS as a tree\n- `more [path]` page a document or stdin (space/b/q)\n- `less [path]` same pager, with PageUp/PageDown\n- `cd <dir>`    change directory (`cd /bin`, `cd ..`, `cd /`)\n- `clear`       clear the screen\n- `wc`          count lines/words/bytes from stdin\n- `date`        print the current date and time\n- `echo`        display a line of text (`echo hello world`)\n- `home`        open the home page (same as `index`)\n- `exit`        return to the home page (same as Ctrl-D on an empty line)\n\n## tips\n\n- Run a page like `resume` to open it (clears the screen).\n- Pipes work: `cat resume | wc -l`.\n- Paths: `./projects`, `/help`, `../`.\n- History: ↑/↓ or Ctrl-P/N. Cancel: Ctrl-C. Clear: Ctrl-L.",path:`help.md`,kind:`page`,apps:[]},{slug:`index`,title:`黄毅 yi.huang@inceptioglobal.ai`,body:`# 黄毅 yi.huang@inceptioglobal.ai
 
 \`\`\`plain
-░▓▓▒  ▒▓▓░░▓▓░     ▓▓▓  ░▓▓▒
+ ░▓▓▒  ▒▓▓░░▓▓░     ▓▓▓  ░▓▓▒
   ░██▓▓██░ ░▓▓░     ███░░▒██▓ ▒▒▒ ░▒▒  ▒▓▓▓▓▒  ▒▒▒▒▓▓░ ░▒▓▓▒▒▒░
     ▓██▓   ░██░     ███▓▓███▓ ▓█▓ ░██░ ▒▒▒▒██▒ ██▓░▓█▓ ██▓░▒██░
     ▒██▒   ░██░     ███  ░██▓ ▓██░▓██░▒██░░██▒ ██▒ ▓██ ▓█▓▒▓██░
@@ -102,7 +141,8 @@ Last update: Wed Sep 23 2026`,path:`index.md`,kind:`page`,apps:[]},{slug:`projec
 
 ## Secure Lightweight Storage Engine
 
-C · Filesystem · Cryptography · Unix Kernel · Feb. 2026 - Present
+C · Filesystem · Cryptography · Unix Kernel
+Inceptio Technology · Feb. 2026 - May 2026
 
 - Built upon a lightweight block filesystem optimized for minimalist, high-performance embedded systems.
 - Implemented block-level Full Disk Encryption (FDE) to secure the filesystem blocks against physical extraction.
@@ -110,11 +150,69 @@ C · Filesystem · Cryptography · Unix Kernel · Feb. 2026 - Present
 
 ## Hardware Security Abstraction Layer
 
-C · C++ · PKCS#11 · OpenSSL · Mar. 2025 - Feb. 2026
+C · C++ · PKCS#11 · OpenSSL
+Inceptio Technology · Mar. 2025 - Feb. 2026
 
 - Architected a plug-and-play cryptographic abstraction layer for multi-SoC platforms by implementing standardized PKCS#11 interfaces for heterogeneous Hardware Security Devices.
 - Developed an OpenSSL Provider wrapping PKCS#11 interfaces, enabling uniform Crypto and Key APIs that work across different Hardware Security Modules.
-- Built a conditional compilation pipeline to target-compile the same codebase across different hardware platforms.`,path:`projects.md`,kind:`page`,apps:[]},{slug:`resume`,title:`Resume`,body:`# Resume
+- Built a conditional compilation pipeline to target-compile the same codebase across different hardware platforms.
+
+## Cybersecurity for Vehicle Camera ECU
+
+SHE · AES-CMAC · Secure Boot
+Magna Electronics, MI · Nov. 2019 - Sep. 2020
+
+- Implemented the in-vehicle symmetric key management protocol defined by the SHE specification.
+- Implemented the intrusion detection applied to the ECU in-vehicle network and recorded the intrusion behavior.
+- Implemented the AES-CMAC based ECU secure boot to protect the data in flash from unauthorized modification.
+- Implemented the secure reprogramming protocol applied on both ECU and reprogramming tools.
+
+## Cybersecurity for Hybrid Vehicle Power Inverter
+
+AUTOSAR · HSM · Cryptography
+Delphi Technologies, MI · Feb. 2019 - Nov. 2019
+
+- Led the Cybersecurity SW in the project, analyzed customer requirements, and inquired solutions in the market.
+- Led and hosted cybersecurity trainings that introduced the basics of cryptography and authentication to the team.
+- Worked with the HSM, testing and integrating the Vector crypto software stacks to the current AUTOSAR.
+
+## Hybrid Vehicle Power Inverter Software
+
+PWM · NXP eMIOS · CAN
+Delphi Technologies, MI · Feb. 2018 - Feb. 2019
+
+- Designed and developed the hardware abstraction layer software for PWM control.
+- Implemented the PWM API on the NXP eMIOS module through object-oriented design.
+- Implemented the testability software that exchanges data between ECU and PC through CAN.
+- Developed Python tools to generate the memory report and integrated the script into the CMake build.
+
+## EMS Software Development
+
+EMS · Dynamic Skip Fire · ETAS INCA
+Delphi Automotive, MI · Jun. 2016 - Feb. 2018
+
+- Developed and maintained existing EMS software components based on customer requirements.
+- Integrated object code into the Delphi EMS for Dynamic Skip Fire; designed and implemented the software interface.
+- Supported all phases of the SW development including requirements, design, development, review, and testing.
+- Worked on a variety of tools including ETAS INCA, Lauterbach, CM Synergy, Plastic SCM, QAC.
+
+## Continuous Authentication using Multimodal Integration
+
+OpenCV · C++ · Java RMI
+Rochester Institute of Technology, NY · Aug. 2014 - Sep. 2015
+
+- Designed an authentication system for Windows via Facial Recognition and Motion Detection.
+- Implemented the Face Recognition and Motion Detection using OpenCV library in C++.
+- Optimized performance by parallelizing the face recognition process on a computing cloud using Java RMI.
+
+## Embedded Hardware Projects
+
+RFID · MSP430 · FPGA
+Beihang University, Beijing, China · Aug. 2010 - May 2013
+
+- Designed an active RFID tag with Allegro PCB Designer for an indoor location system.
+- Implemented the spread spectrum communication protocol on the TI MSP430 MCU for the RFID tag.
+- Implemented the Non-Coherent Summation Bias Filter on a Xilinx FPGA in Verilog for a GPS chip.`,path:`projects.md`,kind:`page`,apps:[]},{slug:`resume`,title:`Resume`,body:`# Resume
 
 Yi Huang (Timothy)
 Staff Embedded Security Engineer
@@ -153,7 +251,7 @@ Security.
   - Endorsement Key Certificate verification for firmware based TPM (Trusted
     Platform Module).
   - Regression Test for firmware TPM functionality on Microsoft Windows.
-- **Cybersecurity Software Engineer, Magna International, Auburn Hills, MI**
+- **Cybersecurity Software Engineer, Magna Electronics, Auburn Hills, MI**
   (Nov. 2019 - Sep. 2020)
   - In-vehicle key management based on SHE (Secure Hardware Extension)
     specification.
@@ -163,7 +261,7 @@ Security.
   - Vehicle ECU software development, including feature design, development,
     code review, and testing.
 
-## Projects
+## Key Projects
 
 - **Secure Lightweight Storage Engine** (C, Filesystem, Cryptography, Unix
   Kernel; Feb. 2026 - Present)
@@ -185,17 +283,28 @@ Security.
 
 ## Education
 
-- **Rochester Institute of Technology**, Rochester, NY —
+- **Rochester Institute of Technology**, Rochester, NY
   Master of Science in Computer Science, 2016
-- **Beihang University**, Beijing, China —
+- **Beihang University**, Beijing, China
   Master of Engineering in Electronic and Communication Engineering, 2013
-- **Beihang University**, Beijing, China —
+- **Beihang University**, Beijing, China
   Bachelor of Engineering in Integrated Circuit Design, 2010`,path:`resume.md`,kind:`page`,apps:[]},{slug:`skills`,title:`Skills`,body:`# Skills
 
-- **Languages**: C, C++, OpenSSL, Python, Shell Scripting (Bash)
-- **Operating Systems**: Linux (Kernel & Application layers), Embedded Linux, RTOS
-- **Tools & Environments**: Git, GDB, CI/CD, Yocto, Agile
-- **Domain Expertise**: Systems Programming, Cryptography, Hardware Security, Secure Boot`,path:`skills.md`,kind:`page`,apps:[]}],apps:[]};function k(){return{all:()=>O.documents,get:e=>O.documents.find(t=>t.slug===e),apps:()=>O.apps}}function A(){return{async:!1,breaks:!1,extensions:null,gfm:!0,hooks:null,pedantic:!1,renderer:null,silent:!1,tokenizer:null,walkTokens:null}}var j=A();function M(e){j=e}var N={exec:()=>null};function P(e){let t=[];return n=>{let r=Math.max(0,Math.min(3,n-1)),i=t[r];return i||(i=e(r),t[r]=i),i}}function F(e,t=``){let n=typeof e==`string`?e:e.source,r={replace:(e,t)=>{let i=typeof t==`string`?t:t.source;return i=i.replace(L.caret,`$1`),n=n.replace(e,i),r},getRegex:()=>new RegExp(n,t)};return r}var I=((e=``)=>{try{return!!RegExp(`(?<=1)(?<!1)`+e)}catch{return!1}})(),L={codeRemoveIndent:/^(?: {0,3}\t| {1,4})/gm,outputLinkReplace:/\\([\[\]])/g,indentCodeCompensation:/^(\s+)(?:```)/,beginningSpace:/^\s+/,endingHash:/#$/,startingSpaceChar:/^ /,endingSpaceChar:/ $/,endingSpaceTabChar:/[ \t]$/,nonSpaceChar:/[^ ]/,newLineCharGlobal:/\n/g,tabCharGlobal:/\t/g,leadingSpaceTab:/^[ \t]+/,multipleSpaceGlobal:/\s+/g,blankLine:/^[ \t]*$/,doubleBlankLine:/\n[ \t]*\n[ \t]*$/,blockquoteStart:/^ {0,3}>/,blockquoteSetextReplace:/\n {0,3}((?:=+|-+) *)(?=\n|$)/g,blockquoteSetextReplace2:/^ {0,3}>[ \t]?/gm,listReplaceNesting:/^ {1,4}(?=( {4})*[^ ])/g,listIsTask:/^\[[ xX]\] +\S/,listReplaceTask:/^\[[ xX]\] +/,listTaskCheckbox:/\[[ xX]\]/,anyLine:/\n.*\n/,hrefBrackets:/^<(.*)>$/,tableDelimiter:/[:|]/,tableAlignChars:/^\||\| *$/g,tableRowBlankLine:/\n[ \t]*$/,tableAlignRight:/^ *-+: *$/,tableAlignCenter:/^ *:-+: *$/,tableAlignLeft:/^ *:-+ *$/,startATag:/^<a /i,endATag:/^<\/a>/i,startPreScriptTag:/^<(pre|code|kbd|script)(\s|>)/i,endPreScriptTag:/^<\/(pre|code|kbd|script)(\s|>)/i,startAngleBracket:/^</,endAngleBracket:/>$/,pedanticHrefTitle:/^([^'"]*[^\s])\s+(['"])(.*)\2/,unicodeAlphaNumeric:/[\p{L}\p{N}]/u,numericCharacterReference:/&#(?:(\d{1,7})|[Xx]([A-Fa-f0-9]{1,6}));/g,escapeTest:/[&<>"']/,escapeReplace:/[&<>"']/g,escapeTestNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,escapeReplaceNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/g,caret:/(^|[^\[])\^/g,percentDecode:/%25/g,findPipe:/\|/g,splitPipe:/ \|/,slashPipe:/\\\|/g,carriageReturn:/\r\n|\r/g,spaceLine:/^ +$/gm,notSpaceStart:/^\S*/,endingNewline:/\n$/,listItemRegex:e=>RegExp(`^( {0,3}${e})((?:[	 ][^\\n]*)?(?:\\n|$))`),nextBulletRegex:P(e=>RegExp(`^ {0,${e}}(?:[*+-]|\\d{1,9}[.)])((?:[ 	][^\\n]*)?(?:\\n|$))`)),hrRegex:P(e=>RegExp(`^ {0,${e}}((?:-[ 	]*){3,}|(?:_[ 	]*){3,}|(?:\\*[ 	]*){3,})(?:\\n+|$)`)),fencesBeginRegex:P(e=>RegExp(`^ {0,${e}}(?:\`\`\`|~~~)`)),headingBeginRegex:P(e=>RegExp(`^ {0,${e}}#`)),htmlBeginRegex:P(e=>RegExp(`^ {0,${e}}(?:</?(?:${ce})(?: +|$|/?>)|<(?:script|pre|style|textarea|!--))`,`i`)),blockquoteBeginRegex:P(e=>RegExp(`^ {0,${e}}>`))},te=/^(?:[ \t]*(?:\n|$))+/,ne=/^((?: {4}| {0,3}\t)[^\n]+(?:\n(?:[ \t]*(?:\n|$))*)?)+/,re=/^ {0,3}(`{3,}(?=[^`\n]*(?:\n|$))|~{3,})([^\n]*)(?:\n|$)(?:|([\s\S]*?)(?:\n|$))(?: {0,3}\1[~`]* *(?=\n|$)|$)/,R=/^ {0,3}((?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/,ie=/^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/,z=/ {0,3}(?:[*+-]|\d{1,9}[.)])/,B=/^(?!bull |blockCode|fences|blockquote|heading|html|table)((?:.|\n(?!\s*?\n|bull |fences|blockquote|heading|hr|html|table))+?)\n {0,3}(=+|-+) *(?:\n+|$)/,ae=F(B).replace(/bull/g,z).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}(?:\s|$)/).replace(/hr/g,/ {0,3}(?:(?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/\|table/g,``).getRegex(),V=F(B).replace(/bull/g,z).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}(?:\s|$)/).replace(/hr/g,/ {0,3}(?:(?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/table/g,/ {0,3}\|?(?:[:\- ]*\|)+[\:\- ]*\n/).getRegex(),H=/^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table|[ \t]+\n)[^\n]+)*)/,U=/^[^\n]+/,W=/(?!\s*\])(?:\\[\s\S]|[^\[\]\\])+/,oe=F(/^ {0,3}\[(label)\]: *(?:\n[ \t]*)?([^<\s][^\s]*|<.*?>)(?:(?: +(?:\n[ \t]*)?| *\n[ \t]*)(title))? *(?:\n+|$)/).replace(`label`,W).replace(`title`,/(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/).getRegex(),se=F(/^(bull)([ \t][^\n]*?)?(?:\n|$)/).replace(/bull/g,z).getRegex(),ce=`address|article|aside|base|basefont|blockquote|body|caption|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option|p|param|search|section|summary|table|tbody|td|tfoot|th|thead|title|tr|track|ul`,le=/<!--(?:-?>|[\s\S]*?(?:-->|$))/,ue=F(`^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n*|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>[^\\n]*\\n*|$)|<![A-Z][\\s\\S]*?(?:>[^\\n]*\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>[^\\n]*\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|<(?!script|pre|style|textarea)([a-z][a-z0-9-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|</(?!script|pre|style|textarea)[a-z][a-z0-9-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$))`,`i`).replace(`comment`,le).replace(`tag`,ce).replace(`attribute`,/ +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex(),de=e=>F(H).replace(`hr`,R).replace(`heading`,` {0,3}#{1,6}(?:\\s|$)`).replace(`|lheading`,``).replace(`|table`,``).replace(`blockquote`,` {0,3}>`).replace(`fences`," {0,3}(?:`{3,}(?=[^`\\n]*(?:\\n|$))|~~~)[^\\n]*(?:\\n|$)").replace(`list`,e).replace(`html`,`</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)`).replace(`tag`,ce).getRegex(),fe=de(/ {0,3}(?:[*+-]|1[.)])[ \t]+[^ \t\n]/),pe=de(/ {0,3}(?:[*+-]|\d{1,9}[.)])(?:[ \t]|\n|$)/),me={blockquote:F(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace(`paragraph`,pe).getRegex(),code:ne,def:oe,fences:re,heading:ie,hr:R,html:ue,lheading:ae,list:se,newline:te,paragraph:fe,table:N,text:U},he=F(`^ *([^\\n ].*)\\n {0,3}((?:\\| *)?:?-+:? *(?:\\| *:?-+:? *)*(?:\\| *)?)(?:\\n((?:(?! *\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)`).replace(`hr`,R).replace(`heading`,` {0,3}#{1,6}(?:\\s|$)`).replace(`blockquote`,` {0,3}>`).replace(`code`,`(?: {4}| {0,3}	)[^\\n]`).replace(`fences`," {0,3}(?:`{3,}(?=[^`\\n]*(?:\\n|$))|~~~)[^\\n]*(?:\\n|$)").replace(`list`,` {0,3}(?:[*+-]|1[.)])[ \\t]`).replace(`html`,`</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)`).replace(`tag`,ce).getRegex(),ge={...me,lheading:V,table:he,paragraph:F(H).replace(`hr`,R).replace(`heading`,` {0,3}#{1,6}(?:\\s|$)`).replace(`|lheading`,``).replace(`table`,he).replace(`blockquote`,` {0,3}>`).replace(`fences`," {0,3}(?:`{3,}(?=[^`\\n]*(?:\\n|$))|~~~)[^\\n]*(?:\\n|$)").replace(`list`,` {0,3}(?:[*+-]|1[.)])[ \\t]+[^ \\t\\n]`).replace(`html`,`</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)`).replace(`tag`,ce).getRegex()},_e={...me,html:F(`^ *(?:comment *(?:\\n|\\s*$)|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)|<tag(?:"[^"]*"|'[^']*'|\\s[^'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))`).replace(`comment`,le).replace(/tag/g,`(?!(?:a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b`).getRegex(),def:/^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,heading:/^(#{1,6})(.*)(?:\n+|$)/,fences:N,lheading:/^(.+?)\n {0,3}(=+|-+) *(?:\n+|$)/,paragraph:F(H).replace(`hr`,R).replace(`heading`,` *#{1,6} *[^
+## Languages
+
+C, C++, OpenSSL, Python, Shell Scripting (Bash)
+
+## Operating Systems
+
+Linux (Kernel & Application layers), Embedded Linux, RTOS
+
+## Tools & Environments
+
+Git, GDB, CI/CD, Yocto, Agile
+
+## Domain Expertise
+
+Systems Programming, Cryptography, Hardware Security, Secure Boot`,path:`skills.md`,kind:`page`,apps:[]}],apps:[]};function k(){return{all:()=>O.documents,get:e=>O.documents.find(t=>t.slug===e),apps:()=>O.apps}}function A(){return{async:!1,breaks:!1,extensions:null,gfm:!0,hooks:null,pedantic:!1,renderer:null,silent:!1,tokenizer:null,walkTokens:null}}var j=A();function M(e){j=e}var N={exec:()=>null};function P(e){let t=[];return n=>{let r=Math.max(0,Math.min(3,n-1)),i=t[r];return i||(i=e(r),t[r]=i),i}}function F(e,t=``){let n=typeof e==`string`?e:e.source,r={replace:(e,t)=>{let i=typeof t==`string`?t:t.source;return i=i.replace(L.caret,`$1`),n=n.replace(e,i),r},getRegex:()=>new RegExp(n,t)};return r}var I=((e=``)=>{try{return!!RegExp(`(?<=1)(?<!1)`+e)}catch{return!1}})(),L={codeRemoveIndent:/^(?: {0,3}\t| {1,4})/gm,outputLinkReplace:/\\([\[\]])/g,indentCodeCompensation:/^(\s+)(?:```)/,beginningSpace:/^\s+/,endingHash:/#$/,startingSpaceChar:/^ /,endingSpaceChar:/ $/,endingSpaceTabChar:/[ \t]$/,nonSpaceChar:/[^ ]/,newLineCharGlobal:/\n/g,tabCharGlobal:/\t/g,leadingSpaceTab:/^[ \t]+/,multipleSpaceGlobal:/\s+/g,blankLine:/^[ \t]*$/,doubleBlankLine:/\n[ \t]*\n[ \t]*$/,blockquoteStart:/^ {0,3}>/,blockquoteSetextReplace:/\n {0,3}((?:=+|-+) *)(?=\n|$)/g,blockquoteSetextReplace2:/^ {0,3}>[ \t]?/gm,listReplaceNesting:/^ {1,4}(?=( {4})*[^ ])/g,listIsTask:/^\[[ xX]\] +\S/,listReplaceTask:/^\[[ xX]\] +/,listTaskCheckbox:/\[[ xX]\]/,anyLine:/\n.*\n/,hrefBrackets:/^<(.*)>$/,tableDelimiter:/[:|]/,tableAlignChars:/^\||\| *$/g,tableRowBlankLine:/\n[ \t]*$/,tableAlignRight:/^ *-+: *$/,tableAlignCenter:/^ *:-+: *$/,tableAlignLeft:/^ *:-+ *$/,startATag:/^<a /i,endATag:/^<\/a>/i,startPreScriptTag:/^<(pre|code|kbd|script)(\s|>)/i,endPreScriptTag:/^<\/(pre|code|kbd|script)(\s|>)/i,startAngleBracket:/^</,endAngleBracket:/>$/,pedanticHrefTitle:/^([^'"]*[^\s])\s+(['"])(.*)\2/,unicodeAlphaNumeric:/[\p{L}\p{N}]/u,numericCharacterReference:/&#(?:(\d{1,7})|[Xx]([A-Fa-f0-9]{1,6}));/g,escapeTest:/[&<>"']/,escapeReplace:/[&<>"']/g,escapeTestNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,escapeReplaceNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/g,caret:/(^|[^\[])\^/g,percentDecode:/%25/g,findPipe:/\|/g,splitPipe:/ \|/,slashPipe:/\\\|/g,carriageReturn:/\r\n|\r/g,spaceLine:/^ +$/gm,notSpaceStart:/^\S*/,endingNewline:/\n$/,listItemRegex:e=>RegExp(`^( {0,3}${e})((?:[	 ][^\\n]*)?(?:\\n|$))`),nextBulletRegex:P(e=>RegExp(`^ {0,${e}}(?:[*+-]|\\d{1,9}[.)])((?:[ 	][^\\n]*)?(?:\\n|$))`)),hrRegex:P(e=>RegExp(`^ {0,${e}}((?:-[ 	]*){3,}|(?:_[ 	]*){3,}|(?:\\*[ 	]*){3,})(?:\\n+|$)`)),fencesBeginRegex:P(e=>RegExp(`^ {0,${e}}(?:\`\`\`|~~~)`)),headingBeginRegex:P(e=>RegExp(`^ {0,${e}}#`)),htmlBeginRegex:P(e=>RegExp(`^ {0,${e}}(?:</?(?:${ce})(?: +|$|/?>)|<(?:script|pre|style|textarea|!--))`,`i`)),blockquoteBeginRegex:P(e=>RegExp(`^ {0,${e}}>`))},te=/^(?:[ \t]*(?:\n|$))+/,ne=/^((?: {4}| {0,3}\t)[^\n]+(?:\n(?:[ \t]*(?:\n|$))*)?)+/,re=/^ {0,3}(`{3,}(?=[^`\n]*(?:\n|$))|~{3,})([^\n]*)(?:\n|$)(?:|([\s\S]*?)(?:\n|$))(?: {0,3}\1[~`]* *(?=\n|$)|$)/,R=/^ {0,3}((?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/,ie=/^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/,z=/ {0,3}(?:[*+-]|\d{1,9}[.)])/,B=/^(?!bull |blockCode|fences|blockquote|heading|html|table)((?:.|\n(?!\s*?\n|bull |fences|blockquote|heading|hr|html|table))+?)\n {0,3}(=+|-+) *(?:\n+|$)/,ae=F(B).replace(/bull/g,z).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}(?:\s|$)/).replace(/hr/g,/ {0,3}(?:(?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/\|table/g,``).getRegex(),V=F(B).replace(/bull/g,z).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}(?:\s|$)/).replace(/hr/g,/ {0,3}(?:(?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/table/g,/ {0,3}\|?(?:[:\- ]*\|)+[\:\- ]*\n/).getRegex(),H=/^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table|[ \t]+\n)[^\n]+)*)/,U=/^[^\n]+/,W=/(?!\s*\])(?:\\[\s\S]|[^\[\]\\])+/,oe=F(/^ {0,3}\[(label)\]: *(?:\n[ \t]*)?([^<\s][^\s]*|<.*?>)(?:(?: +(?:\n[ \t]*)?| *\n[ \t]*)(title))? *(?:\n+|$)/).replace(`label`,W).replace(`title`,/(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/).getRegex(),se=F(/^(bull)([ \t][^\n]*?)?(?:\n|$)/).replace(/bull/g,z).getRegex(),ce=`address|article|aside|base|basefont|blockquote|body|caption|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option|p|param|search|section|summary|table|tbody|td|tfoot|th|thead|title|tr|track|ul`,le=/<!--(?:-?>|[\s\S]*?(?:-->|$))/,ue=F(`^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n*|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>[^\\n]*\\n*|$)|<![A-Z][\\s\\S]*?(?:>[^\\n]*\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>[^\\n]*\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|<(?!script|pre|style|textarea)([a-z][a-z0-9-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|</(?!script|pre|style|textarea)[a-z][a-z0-9-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$))`,`i`).replace(`comment`,le).replace(`tag`,ce).replace(`attribute`,/ +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex(),de=e=>F(H).replace(`hr`,R).replace(`heading`,` {0,3}#{1,6}(?:\\s|$)`).replace(`|lheading`,``).replace(`|table`,``).replace(`blockquote`,` {0,3}>`).replace(`fences`," {0,3}(?:`{3,}(?=[^`\\n]*(?:\\n|$))|~~~)[^\\n]*(?:\\n|$)").replace(`list`,e).replace(`html`,`</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)`).replace(`tag`,ce).getRegex(),fe=de(/ {0,3}(?:[*+-]|1[.)])[ \t]+[^ \t\n]/),pe=de(/ {0,3}(?:[*+-]|\d{1,9}[.)])(?:[ \t]|\n|$)/),me={blockquote:F(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace(`paragraph`,pe).getRegex(),code:ne,def:oe,fences:re,heading:ie,hr:R,html:ue,lheading:ae,list:se,newline:te,paragraph:fe,table:N,text:U},he=F(`^ *([^\\n ].*)\\n {0,3}((?:\\| *)?:?-+:? *(?:\\| *:?-+:? *)*(?:\\| *)?)(?:\\n((?:(?! *\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)`).replace(`hr`,R).replace(`heading`,` {0,3}#{1,6}(?:\\s|$)`).replace(`blockquote`,` {0,3}>`).replace(`code`,`(?: {4}| {0,3}	)[^\\n]`).replace(`fences`," {0,3}(?:`{3,}(?=[^`\\n]*(?:\\n|$))|~~~)[^\\n]*(?:\\n|$)").replace(`list`,` {0,3}(?:[*+-]|1[.)])[ \\t]`).replace(`html`,`</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)`).replace(`tag`,ce).getRegex(),ge={...me,lheading:V,table:he,paragraph:F(H).replace(`hr`,R).replace(`heading`,` {0,3}#{1,6}(?:\\s|$)`).replace(`|lheading`,``).replace(`table`,he).replace(`blockquote`,` {0,3}>`).replace(`fences`," {0,3}(?:`{3,}(?=[^`\\n]*(?:\\n|$))|~~~)[^\\n]*(?:\\n|$)").replace(`list`,` {0,3}(?:[*+-]|1[.)])[ \\t]+[^ \\t\\n]`).replace(`html`,`</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)`).replace(`tag`,ce).getRegex()},_e={...me,html:F(`^ *(?:comment *(?:\\n|\\s*$)|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)|<tag(?:"[^"]*"|'[^']*'|\\s[^'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))`).replace(`comment`,le).replace(/tag/g,`(?!(?:a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b`).getRegex(),def:/^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,heading:/^(#{1,6})(.*)(?:\n+|$)/,fences:N,lheading:/^(.+?)\n {0,3}(=+|-+) *(?:\n+|$)/,paragraph:F(H).replace(`hr`,R).replace(`heading`,` *#{1,6} *[^
 ]`).replace(`lheading`,ae).replace(`|table`,``).replace(`blockquote`,` {0,3}>`).replace(`|fences`,``).replace(`|list`,``).replace(`|html`,``).replace(`|tag`,``).getRegex()},ve=/^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,ye=/^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,be=/^( {2,}|\\)\n(?!\s*$)[ \t]*/,xe=/^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/,G=/[\p{P}\p{S}]/u,K=/[\s\p{P}\p{S}]/u,Se=/[^\s\p{P}\p{S}]/u,Ce=F(/^((?![*_])punctSpace)/,`u`).replace(/punctSpace/g,K).getRegex(),we=/[\p{Pi}\p{Ps}"']/u,Te=/(?!~)[\p{P}\p{S}]/u,Ee=/(?!~)[\s\p{P}\p{S}]/u,De=/(?:[^\s\p{P}\p{S}]|~)/u,Oe=F(/link|precode-code|html/,`g`).replace(`link`,/\[(?:[^\[\]`]|(?<a>`+)[^`]+\k<a>(?!`))*?\]\((?:\\[\s\S]|[^\\\(\)]|\((?:\\[\s\S]|[^\\\(\)])*\))*\)/).replace(`precode-`,I?"(?<!`)()":"(^^|[^`])").replace(`code`,/(?<b>`+)[^`]+\k<b>(?!`)/).replace(`html`,/<(?! )[^<>]*?>/).getRegex(),ke=/^(?:\*+(?:((?!\*)punct)|([^\s*]))?)|^_+(?:((?!_)punct)|([^\s_]))?/,Ae=F(ke,`u`).replace(/punct/g,G).getRegex(),je=F(ke,`u`).replace(/punct/g,Te).getRegex(),Me=F(/^(?:\*+(?:((?!\*)(?!openQuote)punct)|([^\s*]))?)|^_+(?:((?!_)(?!openQuote)punct)|([^\s_]))?/,`u`).replace(/openQuote/g,we).replace(/punct/g,G).getRegex(),Ne=`^[^_*]*?__[^_*]*?\\*[^_*]*?(?=__)|[^*]+(?=[^*])|(?!\\*)punct(\\*+)(?=[\\s]|$)|notPunctSpace(\\*+)(?!\\*)(?=punctSpace|$)|(?!\\*)punctSpace(\\*+)(?=notPunctSpace)|[\\s](\\*+)(?!\\*)(?=punct)|(?!\\*)punct(\\*+)(?!\\*)(?=punct)|notPunctSpace(\\*+)(?=notPunctSpace)`,Pe=F(Ne,`gu`).replace(/notPunctSpace/g,Se).replace(/punctSpace/g,K).replace(/punct/g,G).getRegex(),Fe=F(Ne,`gu`).replace(/notPunctSpace/g,De).replace(/punctSpace/g,Ee).replace(/punct/g,Te).getRegex(),Ie=F(`^[^_*]*?__[^_*]*?\\*[^_*]*?(?=__)|[^*]+(?=[^*])|(?!\\*)punct(\\*+)(?=[\\s]|$)|notPunctSpace(\\*+)(?!\\*)(?=punctSpace|$)|(?!\\*)[\\s](\\*+)(?=notPunctSpace)|[\\s](\\*+)(?!\\*)(?=punct)|(?!\\*)punct(\\*+)(?!\\*)(?=punct)|(?:(?!\\*)punct|notPunctSpace)(\\*+)(?!\\*)(?=notPunctSpace)`,`gu`).replace(/notPunctSpace/g,Se).replace(/punctSpace/g,K).replace(/punct/g,G).getRegex(),Le=F(`^[^_*]*?\\*\\*[^_*]*?_[^_*]*?(?=\\*\\*)|[^_]+(?=[^_])|(?!_)punct(_+)(?=[\\s]|$)|notPunctSpace(_+)(?!_)(?=punctSpace|$)|(?!_)punctSpace(_+)(?=notPunctSpace)|[\\s](_+)(?!_)(?=punct)|(?!_)punct(_+)(?!_)(?=punct)`,`gu`).replace(/notPunctSpace/g,Se).replace(/punctSpace/g,K).replace(/punct/g,G).getRegex(),Re=F(`^[^_*]*?\\*\\*[^_*]*?_[^_*]*?(?=\\*\\*)|[^_]+(?=[^_])|(?!_)punct(_+)(?=[\\s]|$)|notPunctSpace(_+)(?!_)(?=punctSpace|$)|(?!_)[\\s](_+)(?=notPunctSpace)|[\\s](_+)(?!_)(?=punct)|(?!_)punct(_+)(?!_)(?=punct)|(?:(?!_)punct|notPunctSpace)(_+)(?!_)(?=notPunctSpace)`,`gu`).replace(/notPunctSpace/g,Se).replace(/punctSpace/g,K).replace(/punct/g,G).getRegex(),ze=F(/^~~?(?:((?!~)punct)|[^\s~])/,`u`).replace(/punct/g,G).getRegex(),Be=F(`^[^~]+(?=[^~])|(?!~)punct(~~?)(?=[\\s]|$)|notPunctSpace(~~?)(?!~)(?=punctSpace|$)|(?!~)punctSpace(~~?)(?=notPunctSpace)|[\\s](~~?)(?!~)(?=punct)|(?!~)punct(~~?)(?!~)(?=punct)|notPunctSpace(~~?)(?=notPunctSpace)`,`gu`).replace(/notPunctSpace/g,Se).replace(/punctSpace/g,K).replace(/punct/g,G).getRegex(),Ve=F(/\\(punct)/,`gu`).replace(/punct/g,G).getRegex(),He=F(/^<(scheme:[^\s\x00-\x1f<>]*|email)>/).replace(`scheme`,/[a-zA-Z][a-zA-Z0-9+.-]{1,31}/).replace(`email`,/[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/).getRegex(),Ue=F(le).replace(`(?:-->|$)`,`-->`).getRegex(),We=F(`^comment|^</[a-zA-Z][a-zA-Z0-9-]*\\s*>|^<[a-zA-Z][a-zA-Z0-9-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>`).replace(`comment`,Ue).replace(`attribute`,/\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/).getRegex(),Ge=/\[(?:\\[\s\S]|[^\[\]\\])*\]/,Ke=F(/(?:\[(?:brackets|\\[\s\S]|[^\[\]\\])*\]|\\[\s\S]|`+(?!`)[^`]*?`+(?!`)|``+(?=\])|[^\[\]\\`])*?/).replace(`brackets`,Ge).getRegex(),qe=F(/^!?\[(label)\]\(\s*(href)(?:(?:[ \t]+(?:\n[ \t]*)?|\n[ \t]*)(title))?\s*\)/).replace(`label`,Ke).replace(`href`,/<(?:\\.|[^\n<>\\])+>|[^ \t\n\x00-\x1f]+|(?=\))/).replace(`title`,/"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/).getRegex(),Je=F(/^!?\[(label)\]\[(ref)\]/).replace(`label`,Ke).replace(`ref`,W).getRegex(),Ye=F(/^!?\[(ref)\](?:\[\])?/).replace(`ref`,W).getRegex(),Xe=/(?!\s*\])(?:\\[\s\S]|[^\[\]\\]){1,999}/,Ze=F(/(?:[^\[\]\\`]*(?:\[(?:brackets|\\[\s\S]|[^\[\]\\])*\]|\\[\s\S]|`+(?!`)[^`]*?`+(?!`)|``+(?=\]))){0,999}?[^\[\]\\`]*?/).replace(`brackets`,Ge).getRegex(),Qe=F(`reflink|nolink(?!\\()`,`g`).replace(`reflink`,F(/^!?\[(label)\]\[(ref)\]/).replace(`label`,Ze).replace(`ref`,Xe).getRegex()).replace(`nolink`,F(/^!?\[(ref)\](?:\[\])?/).replace(`ref`,Xe).getRegex()).getRegex(),$e=/[hH][tT][tT][pP][sS]?|[fF][tT][pP]/,et=F(/(?:mailto:email|xmpp:email(?:\/[A-Za-z0-9@.]+)?)/).replace(/email/g,/[A-Za-z0-9._+-]+@[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![\w-])/).getRegex(),tt={_backpedal:N,anyPunctuation:Ve,autolink:He,blockSkip:Oe,br:be,code:ye,del:N,delLDelim:N,delRDelim:N,emStrongLDelim:Ae,emStrongRDelimAst:Pe,emStrongRDelimUnd:Le,escape:ve,link:qe,nolink:Ye,punctuation:Ce,reflink:Je,reflinkSearch:Qe,tag:We,text:xe,url:N},nt={...tt,emStrongLDelim:Me,emStrongRDelimAst:Ie,emStrongRDelimUnd:Re,link:F(/^!?\[(label)\]\((.*?)\)/).replace(`label`,Ke).getRegex(),reflink:F(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace(`label`,Ke).getRegex()},rt={...tt,emStrongRDelimAst:Fe,emStrongLDelim:je,delLDelim:ze,delRDelim:Be,url:F(/^emailProtocol|^((?:protocol):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/).replace(`emailProtocol`,et).replace(`protocol`,$e).replace(`email`,/[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![\w-])/).getRegex(),_backpedal:/(?:[^?!.,:;*_'"~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_'"~)]+(?!$))+/,del:/^(~~?)(?=[^\s~])((?:\\[\s\S]|[^\\])*?(?:\\[\s\S]|[^\s~\\]))\1(?=[^~]|$)/,text:F(/^(?:[^a-zA-Z0-9](?=emailProtocol)|(`+|~+|[^`~])(?:(?=[`~])|(?= {2,}\n)|(?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)|[\s\S]*?(?:(?=[\\<!\[`*~_]|\b_|protocol:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9](?=emailProtocol)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))))/).replace(`protocol`,$e).replace(/emailProtocol/g,/(?:mailto|xmpp):/).getRegex()},it={...rt,br:F(be).replace(`{2,}`,`*`).getRegex(),text:F(rt.text).replace(`\\b_`,`\\b_| {2,}\\n`).replace(/\{2,\}/g,`*`).getRegex()},at={normal:me,gfm:ge,pedantic:_e},ot={normal:tt,gfm:rt,breaks:it,pedantic:nt},st={"&":`&amp;`,"<":`&lt;`,">":`&gt;`,'"':`&quot;`,"'":`&#39;`},ct=e=>st[e];function q(e,t){if(t){if(L.escapeTest.test(e))return e.replace(L.escapeReplace,ct)}else if(L.escapeTestNoEncode.test(e))return e.replace(L.escapeReplaceNoEncode,ct);return e}function lt(e){return e.replace(L.numericCharacterReference,(e,t,n)=>{let r=t===void 0?Number.parseInt(n,16):Number.parseInt(t,10);return r===0||r>1114111||r>=55296&&r<=57343?`�`:String.fromCodePoint(r)})}function ut(e){try{e=encodeURI(e).replace(L.percentDecode,`%`)}catch{return null}return e}function dt(e,t){let n=e.replace(L.findPipe,(e,t,n)=>{let r=!1,i=t;for(;--i>=0&&n[i]===`\\`;)r=!r;return r?`|`:` |`}).split(L.splitPipe),r=0;if(n[0].trim()||n.shift(),n.length>0&&!n.at(-1)?.trim()&&n.pop(),t){if(n.length>t)n.splice(t);else for(;n.length<t;)n.push(``)}for(;r<n.length;r++)n[r]=n[r].trim().replace(L.slashPipe,`|`);return n}function J(e,t,n){let r=e.length;if(r===0)return``;let i=0;for(;i<r;){let a=e.charAt(r-i-1);if(a===t&&!n)i++;else if(a!==t&&n)i++;else break}return e.slice(0,r-i)}function ft(e){let t=e.split(`
 `),n=t.length-1;for(;n>=0&&L.blankLine.test(t[n]);)n--;return t.length-n<=2?e:t.slice(0,n+1).join(`
 `)}function pt(e){return e.trim().toLowerCase().toUpperCase().toLowerCase()}function mt(e,t){if(e.indexOf(t[1])===-1)return-1;let n=0;for(let r=0;r<e.length;r++)if(e[r]===`\\`)r++;else if(e[r]===t[0])n++;else if(e[r]===t[1]&&(n--,n<0))return r;return n>0?-2:-1}function ht(e,t=0){let n=t,r=``;for(let t of e)if(t===`	`){let e=4-n%4;r+=` `.repeat(e),n+=e}else r+=t,n++;return r}function gt(e,t,n,r,i){let a=t.href,o=t.title||null,s=e[1].replace(i.other.outputLinkReplace,`$1`),c=e[0].charAt(0)===`!`;r.state.inLink=!0;let l=r.state.linkEmitted,u=r.state.inRawBlock;r.state.linkEmitted=!1;let d=r.inlineTokens(s),f=r.state.linkEmitted;if(r.state.linkEmitted=l,r.state.inLink=!1,!c){if(f){r.state.inRawBlock=u;return}r.state.linkEmitted=!0}return{type:c?`image`:`link`,raw:n,href:a,title:o,text:s,tokens:d}}function _t(e,t,n){let r=e.match(n.other.indentCodeCompensation);if(r===null)return t;let i=r[1];return t.split(`
@@ -288,4 +397,4 @@ Please report this to https://github.com/markedjs/marked.`,e){let e=`<p>An error
 `))}};function $t(e){let t=[],n=null,r=null;for(let i=1;i<e.length;i++){let a=e[i];if(a===`-name`){let t=e[++i];t&&(n=nn(t))}else if(a===`-type`){let t=e[++i];(t===`f`||t===`d`)&&(r=t)}else a.startsWith(`-`)||t.push(a)}return{starts:t,name:n,type:r}}function*en(e,t,n){for(let r of Zt(e,n)){let i=(t===`/`?``:t)+`/`+r.name,a=e===``?r.name:e+`/`+r.name;yield{disp:i,dir:r.dir},r.dir&&(yield*en(a,i,n))}}function tn(e){let t=e.replace(/\/+$/,``);return t===``?`/`:t}function nn(e){let t=e.replace(/[.+^${}()|[\]\\]/g,`\\$&`).replace(/\*/g,`.*`).replace(/\?/g,`.`);return RegExp(`^`+t+`$`)}var rn=g(62),an=g(244),on={name:`tree`,description:`draw the FS as a tree: tree [path]`,async run(e,t){let n=t[1]??`.`,r=d(n,e.cwd);if(!Yt(r,e)){e.stdout.print(`tree: ${n}: not a directory`);return}let i=[n.replace(/\/+$/,``)||`/`],a={dirs:0,files:0};sn(r,``,e,i,a),i.push(``),i.push(`${m}${a.dirs} director${a.dirs===1?`y`:`ies`}, ${a.files} file${a.files===1?``:`s`}${f}`),e.stdout.print(i.join(`
 `))}};function sn(e,t,n,r,i){let a=Zt(e,n);a.forEach((o,s)=>{let c=s===a.length-1,l=c?`└── `:`├── `,u=c?`    `:`│   `,d=o.dir?`${p}${rn}${o.name}/${f}`:o.name;r.push(`${an}${t}${l}${f}${d}`),o.dir?(i.dirs++,sn(e===``?o.name:e+`/`+o.name,t+u,n,r,i)):i.files++})}var cn=`\x1B[0J`,ln={name:`more`,description:`page a document or stdin: more [path]`,async run(e,t){let n=t[1],r=null;if(n){let t=e.store.get(d(n,e.cwd));if(!t){e.stdout.print(`more: ${n}: no such file`);return}r=jt(t.body,e.term.cols)}else e.stdin&&(r=e.stdin);if(r===null){e.stdout.print(`usage: more [path]`);return}if(!e.tty){e.stdout.write(r);return}await dn(e,r)}},un={...ln,name:`less`,description:`page a document or stdin: less [path]`};async function dn(e,t){let n=e.term.takeOver(),r=t.split(`
 `),i=0,a=0,o=()=>{n.clear();let e=Math.max(1,n.cols),t=Math.max(1,n.rows-1),o=[];for(let t of r)o.push(...Dt(t,e));let s=o.length,c=Math.max(0,s-t);i=Math.min(i,c);let l=o.slice(i,i+t);a=l.length,n.write(l.join(`\r
-`));let u=i>=c&&s>0,d=s===0?100:Math.min(100,Math.round((i+t)/s*100)),p=u?`${m}(END)${f}`:`${m}--More-- ${d}%${f}`;return n.write(_(0,n.rows-1)+p),{atEnd:u,pageH:t,last:c}},s=e=>{e.ctrlKey&&(e.key===`d`||e.key===`u`||e.key===``||e.key===``)&&e.preventDefault()};window.addEventListener(`keydown`,s,!0);let c=o();try{await new Promise(e=>{let t=n.onKey(n=>{let r=n.domEvent;if(r.ctrlKey){let e=r.key;if(e===`d`||e===`D`||e===``)i=Math.min(i+10,c.last);else if(e===`u`||e===`U`||e===``)i=Math.max(i-10,0);else return;c=o();return}let a=r.key;if(a===`q`||a===`Escape`){t(),e();return}if(a===` `||a===`PageDown`||a===`f`){if(c.atEnd){t(),e();return}i=Math.min(i+c.pageH,c.last)}else if(a===`b`||a===`PageUp`)i=Math.max(i-c.pageH,0);else if(a===`ArrowDown`||a===`j`||a===`Enter`)i=Math.min(i+1,c.last);else if(a===`ArrowUp`||a===`k`)i=Math.max(i-1,0);else if(a===`g`)i=0;else if(a===`G`)i=c.last;else return;c=o()})})}finally{window.removeEventListener(`keydown`,s,!0)}n.write(_(0,a)+cn),n.release()}var fn={name:`cd`,description:`change directory: cd <dir>`,builtin:!0,async run(e,t){let n=t[1]??`/`,r=e.chdir(n);r&&e.stdout.print(`cd: ${r}`)}},pn={name:`pwd`,description:`print the working directory`,builtin:!0,async run(e){e.stdout.print(e.cwd===``?`/`:`/`+e.cwd)}},mn={name:`wc`,description:`count lines/words/bytes from stdin: wc [-lwc]`,async run(e,t){let n=e.stdin,r=t.slice(1).find(e=>/^-[lwc]+$/.test(e)),i=e=>!r||r.includes(e),a=(n.match(/\n/g)??[]).length,o=n.trim().split(/\s+/).filter(Boolean).length,s=n.length,c=[];i(`l`)&&c.push(String(a)),i(`w`)&&c.push(String(o)),i(`c`)&&c.push(String(s)),e.stdout.print(c.join(`	`))}},hn={name:`clear`,description:`clear the screen`,async run(e){e.term.clear()}},gn={name:`exit`,description:`return to the home page (same as Ctrl-D on an empty line)`,async run(e){e.chdir(`/`);let t=e.resolve(`index`);t&&await t.run(e,[`index`])}},_n={name:`whoami`,description:`who runs this site`,async run(e){e.stdout.print(`yi.huang`)}},vn=[`Sun`,`Mon`,`Tue`,`Wed`,`Thu`,`Fri`,`Sat`],yn=[`Jan`,`Feb`,`Mar`,`Apr`,`May`,`Jun`,`Jul`,`Aug`,`Sep`,`Oct`,`Nov`,`Dec`];function bn(e){return new Intl.DateTimeFormat(`en-US`,{timeZoneName:`short`}).formatToParts(e).find(e=>e.type===`timeZoneName`)?.value??``}var xn=[Lt,Rt,Vt,Wt,qt,Qt,on,ln,un,fn,pn,mn,hn,gn,_n,{name:`date`,description:`print the current date and time`,async run(e){let t=new Date,n=t.getHours()%12||12,r=t.getHours()<12?`AM`:`PM`,i=e=>String(e).padStart(2,`0`);e.stdout.print(`${vn[t.getDay()]} ${yn[t.getMonth()]} ${t.getDate()} ${i(n)}:${i(t.getMinutes())}:${i(t.getSeconds())} ${r} ${bn(t)} ${t.getFullYear()}`)}},{name:`echo`,description:`display a line of text`,async run(e,t){e.stdout.print(t.slice(1).join(` `))}}],Sn=document.getElementById(`term-host`),Cn=document.getElementById(`term-screen`);if(!Sn||!Cn)throw Error(`missing #term-host/#term-screen`);var wn=()=>location.hash.replace(/^#/,``).trim(),Tn=wn()||`index`,En,Dn=new c(Cn,e=>{history.pushState({cmd:e},``,`#`+e),En.inject(e)}),On=l(),kn=k();for(let e of xn)On.register(e);for(let e of kn.all())On.register(Ft(e));En=new ee({term:Dn,registry:On,store:kn,initialCommand:Tn}),window.addEventListener(`popstate`,e=>{let t=e.state?.cmd||wn()||`index`;En.inject(t)}),history.replaceState({cmd:Tn},``,location.pathname+location.search),En.start();var An=!1,jn=()=>{if(!An){An=!0;try{Dn.fit()}finally{Sn.classList.add(`ready`),Dn.focus()}}},Mn=document.fonts?.ready??null;Mn?Mn.then(jn):jn(),setTimeout(jn,1500);
+`));let u=i>=c&&s>0,d=s===0?100:Math.min(100,Math.round((i+t)/s*100)),p=u?`${m}(END)${f}`:`${m}--More-- ${d}%${f}`;return n.write(_(0,n.rows-1)+p),{atEnd:u,pageH:t,last:c}},s=e=>{e.ctrlKey&&(e.key===`d`||e.key===`u`||e.key===``||e.key===``)&&e.preventDefault()};window.addEventListener(`keydown`,s,!0);let c=o();try{await new Promise(e=>{let t=n.onKey(n=>{let r=n.domEvent;if(r.ctrlKey){let e=r.key;if(e===`d`||e===`D`||e===``)i=Math.min(i+10,c.last);else if(e===`u`||e===`U`||e===``)i=Math.max(i-10,0);else return;c=o();return}let a=r.key;if(a===`q`||a===`Escape`){t(),e();return}if(a===` `||a===`PageDown`||a===`f`){if(c.atEnd){t(),e();return}i=Math.min(i+c.pageH,c.last)}else if(a===`b`||a===`PageUp`)i=Math.max(i-c.pageH,0);else if(a===`ArrowDown`||a===`j`||a===`Enter`)i=Math.min(i+1,c.last);else if(a===`ArrowUp`||a===`k`)i=Math.max(i-1,0);else if(a===`g`)i=0;else if(a===`G`)i=c.last;else return;c=o()})})}finally{window.removeEventListener(`keydown`,s,!0)}n.write(_(0,a)+cn),n.release()}var fn={name:`cd`,description:`change directory: cd <dir>`,builtin:!0,async run(e,t){let n=t[1]??`/`,r=e.chdir(n);r&&e.stdout.print(`cd: ${r}`)}},pn={name:`pwd`,description:`print the working directory`,builtin:!0,async run(e){e.stdout.print(e.cwd===``?`/`:`/`+e.cwd)}},mn={name:`wc`,description:`count lines/words/bytes from stdin: wc [-lwc]`,async run(e,t){let n=e.stdin,r=t.slice(1).find(e=>/^-[lwc]+$/.test(e)),i=e=>!r||r.includes(e),a=(n.match(/\n/g)??[]).length,o=n.trim().split(/\s+/).filter(Boolean).length,s=n.length,c=[];i(`l`)&&c.push(String(a)),i(`w`)&&c.push(String(o)),i(`c`)&&c.push(String(s)),e.stdout.print(c.join(`	`))}},hn={name:`clear`,description:`clear the screen`,async run(e){e.term.clear()}},gn={name:`exit`,description:`return to the home page (same as Ctrl-D on an empty line)`,async run(e){e.chdir(`/`);let t=e.resolve(`index`);t&&await t.run(e,[`index`])}},_n={name:`whoami`,description:`who runs this site`,async run(e){e.stdout.print(`yi.huang`)}},vn=[`Sun`,`Mon`,`Tue`,`Wed`,`Thu`,`Fri`,`Sat`],yn=[`Jan`,`Feb`,`Mar`,`Apr`,`May`,`Jun`,`Jul`,`Aug`,`Sep`,`Oct`,`Nov`,`Dec`];function bn(e){return new Intl.DateTimeFormat(`en-US`,{timeZoneName:`short`}).formatToParts(e).find(e=>e.type===`timeZoneName`)?.value??``}var xn=[Lt,Rt,Vt,Wt,qt,Qt,on,ln,un,fn,pn,mn,hn,gn,_n,{name:`date`,description:`print the current date and time`,async run(e){let t=new Date,n=t.getHours()%12||12,r=t.getHours()<12?`AM`:`PM`,i=e=>String(e).padStart(2,`0`);e.stdout.print(`${vn[t.getDay()]} ${yn[t.getMonth()]} ${t.getDate()} ${i(n)}:${i(t.getMinutes())}:${i(t.getSeconds())} ${r} ${bn(t)} ${t.getFullYear()}`)}},{name:`echo`,description:`display a line of text`,async run(e,t){e.stdout.print(t.slice(1).join(` `))}},{name:`home`,description:`open the home page (same as index)`,async run(e){let t=e.resolve(`index`);t&&await t.run(e,[`index`])}}],Sn=document.getElementById(`term-host`),Cn=document.getElementById(`term-screen`);if(!Sn||!Cn)throw Error(`missing #term-host/#term-screen`);var wn=()=>location.hash.replace(/^#/,``).trim(),Tn=wn()||`index`,En,Dn=new c(Cn,e=>{history.pushState({cmd:e},``,`#`+e),En.inject(e)}),On=l(),kn=k();for(let e of xn)On.register(e);for(let e of kn.all())On.register(Ft(e));En=new ee({term:Dn,registry:On,store:kn,initialCommand:Tn}),window.addEventListener(`popstate`,e=>{let t=e.state?.cmd||wn()||`index`;En.inject(t)}),history.replaceState({cmd:Tn},``,location.pathname+location.search),En.start();var An=!1,jn=()=>{if(!An){An=!0;try{Dn.fit()}finally{Sn.classList.add(`ready`),Dn.focus()}}},Mn=document.fonts?.ready??null;Mn?Mn.then(jn):jn(),setTimeout(jn,1500);
