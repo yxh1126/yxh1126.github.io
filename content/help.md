@@ -17,6 +17,8 @@ and tools live in `/bin`.
 - `cd <dir>`    change directory (`cd /bin`, `cd ..`, `cd /`)
 - `clear`       clear the screen
 - `wc`          count lines/words/bytes from stdin
+- `date`        print the current date and time
+- `echo`        display a line of text (`echo hello world`)
 - `exit`        return to the home page (same as Ctrl-D on an empty line)
 
 ## tips
