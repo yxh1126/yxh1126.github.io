@@ -20,13 +20,14 @@
 > 2445 Augustine Dr. Suites 150
 > Santa Clara, CA 95054
 
-*An engineer dedicated to mastering Low-Level Principles in an era where
-"Code is Cheap". A self-driven person who thrives on breathing life into
-cold hardware. Working as an Embedded Security Engineer not because it's
-a career, but driven by a deep passion for Firmware Development, Systems
-Architecture, and Hardware Security.*
+**🕐 2000 "Talk is Cheap. Show me the code." --Linus Torvalds**
+**🕐 2026 "Code is Cheap. Show me the talk (prompt)." --AI**
+
+*Dedicated to mastering low-level principles in an era where "Code is Cheap".
+Thrives on breathing life into cold hardware - from boot ROM to userspace.
+Driven by a deep passion for Firmware Dev, Systems Arch, and Cybersecurity.*
 
 - This page doubles as a shell.
-  Try: `bio`, `help`, `tree bin/ | less`.
+- Try: `bio`, `help`, `tree bin/ | less`.
 
 Last update: {{ displayDate(2026, 9, 25) }}
