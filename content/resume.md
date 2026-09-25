@@ -7,8 +7,8 @@ linkedin.com/in/yhtim · github.com/yxh1126
 
 ## Summary
 
-An engineer dedicated to mastering Low-Level Principles in an era where "Code is
-Cheap". A self-driven person who thrives on breathing life into cold hardware.
+An engineer dedicated to mastering Low-Level Principles in an era where "Code
+is Cheap". A self-driven person who thrives on breathing life into cold chips.
 Working as an Embedded Security Engineer not because it's a career, but driven
 by a deep passion for Firmware Development, Systems Architecture, and Hardware
 Security.
@@ -49,16 +49,18 @@ Security.
 
 ## Key Projects
 
-- **Secure Lightweight Storage Engine** (C, Filesystem, Cryptography, Unix
-  Kernel; Feb. 2026 - Present)
-  - Built upon a lightweight block filesystem optimized for minimalist,
-    high-performance embedded systems.
-  - Implemented block-level Full Disk Encryption (FDE) to secure the filesystem
-    blocks against physical extraction.
-  - Integrated a crypto verification chain using Merkle trees to check
-    immutable system image integrity during runtime.
+- **Security Features for L4 Autonomous Trucks** (PKI, Device Identity, HSM;
+  Aug. 2026 - Present)
+  - Developing security features for the L4 autonomous truck platform.
+  - Designed and developed the platform software architecture supporting
+    multi-OEM certificate enrollment and verification.
+  - Developed Nvidia ThorX/ThorU device identity authentication based on
+    public/private key pairs.
+  - Adapted the HSM hardware crypto API on ThorX/ThorU, covering
+    encryption/decryption and certificate-related functionality.
+  - Supporting GitLab repository and Artifactory administration and management.
 - **Hardware Security Abstraction Layer** (C, C++, PKCS#11, OpenSSL;
-  Mar. 2025 - Feb. 2026)
+  Mar. 2026 - Aug. 2026)
   - Architected a plug-and-play cryptographic abstraction layer for multi-SoC
     platforms by implementing standardized PKCS#11 interfaces for heterogeneous
     Hardware Security Devices.

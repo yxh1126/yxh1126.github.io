@@ -1,5 +1,16 @@
 # Projects
 
+## Security Features for L4 Autonomous Trucks
+
+PKI · Device Identity · HSM
+Inceptio Technology, CA · Aug. 2026 - Present
+
+- Developing security features for the L4 autonomous truck platform.
+- Designed and developed the platform software architecture supporting multi-OEM certificate enrollment and verification.
+- Developed Nvidia ThorX/ThorU device identity authentication based on public/private key pairs.
+- Adapted the HSM hardware crypto API on ThorX/ThorU, covering encryption/decryption and certificate-related functionality.
+- Supporting GitLab repository and Artifactory administration and management.
+
 ## Secure Lightweight Storage Engine
 
 C · Filesystem · Cryptography · Unix Kernel
@@ -12,7 +23,7 @@ Inceptio Technology, CA · Feb. 2026 - May 2026
 ## Hardware Security Abstraction Layer
 
 C · C++ · PKCS#11 · OpenSSL
-Inceptio Technology, CA · Mar. 2025 - Feb. 2026
+Inceptio Technology, CA · Mar. 2026 - Aug. 2026
 
 - Architected a plug-and-play cryptographic abstraction layer for multi-SoC platforms by implementing standardized PKCS#11 interfaces for heterogeneous Hardware Security Devices.
 - Developed an OpenSSL Provider wrapping PKCS#11 interfaces, enabling uniform Crypto and Key APIs that work across different Hardware Security Modules.
@@ -20,7 +31,7 @@ Inceptio Technology, CA · Mar. 2025 - Feb. 2026
 
 ## Secure Boot for Multi-SoC ADCU
 
-Secure Boot · Fuse · OTA
+Secure Boot · eFuse Provisioning · Cloud Signing Tools
 Inceptio Technology, CA · Jan. 2023 - Nov. 2023
 
 - Delivered Secure Boot for the multi-SoC Autonomous Driving Control Unit (Infineon Aurix, NXP LX2160, Horizon Robotics J5).
