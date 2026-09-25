@@ -3,7 +3,7 @@
 ## Secure Lightweight Storage Engine
 
 C · Filesystem · Cryptography · Unix Kernel
-Inceptio Technology · Feb. 2026 - May 2026
+Inceptio Technology, CA · Feb. 2026 - May 2026
 
 - Built upon a lightweight block filesystem optimized for minimalist, high-performance embedded systems.
 - Implemented block-level Full Disk Encryption (FDE) to secure the filesystem blocks against physical extraction.
@@ -12,11 +12,47 @@ Inceptio Technology · Feb. 2026 - May 2026
 ## Hardware Security Abstraction Layer
 
 C · C++ · PKCS#11 · OpenSSL
-Inceptio Technology · Mar. 2025 - Feb. 2026
+Inceptio Technology, CA · Mar. 2025 - Feb. 2026
 
 - Architected a plug-and-play cryptographic abstraction layer for multi-SoC platforms by implementing standardized PKCS#11 interfaces for heterogeneous Hardware Security Devices.
 - Developed an OpenSSL Provider wrapping PKCS#11 interfaces, enabling uniform Crypto and Key APIs that work across different Hardware Security Modules.
 - Built a conditional compilation pipeline to target-compile the same codebase across different hardware platforms.
+
+## Secure Boot for Multi-SoC ADCU
+
+Secure Boot · Fuse · OTA
+Inceptio Technology, CA · Jan. 2023 - Nov. 2023
+
+- Delivered Secure Boot for the multi-SoC Autonomous Driving Control Unit (Infineon Aurix, NXP LX2160, Horizon Robotics J5).
+- Built a firmware signing and private key management cloud service shared across the Aurix, LX2160, and J5 platforms.
+- Developed multi-language, multi-platform Secure Boot signing client tools running on both Linux and Windows.
+- Updated and upgraded the Secure Image build chain, moving LX2160 and J5 from local signing to cloud signing.
+- Provided offline flashing images that enable Secure Boot, including LX2160 and J5 Fuse Provisioning.
+- Designed the automated flow and tools for enabling Secure Boot in the production-line environment (mainly the LX2160 Secure Boot enablement flow).
+
+## Linux Device Driver Integration
+
+Linux Driver · SJA1110 · SJA1105
+Inceptio Technology, CA · May 2023 - Aug. 2023
+
+- Integrated and updated Linux device drivers for multiple Ethernet switch chips (SJA1110, SJA1105) on the multi-SoC ADCU.
+- Updated the SJA1110 kernel driver, exposing SJA1110 register read/write interfaces to the LX2160 Linux userspace.
+- Integrated the SJA1105 kernel driver into the J5 Linux environment, exposing SJA1105 register read/write interfaces to userspace.
+- Developed register read/write APIs and tools for each environment, following the SJA1110/1105 interface access rules.
+- Integrated the SJA1105 firmware generation script to automatically build firmware images and load them at driver runtime.
+
+## Crypto API & End-of-Line Crypto Tools for ADCU
+
+TPM · HSM · TrustZone · PKCS#11
+Inceptio Technology, CA · Nov. 2021 - Nov. 2022
+
+- Developed two generations of Crypto APIs and end-of-line crypto tools for the Autonomous Driving Control Unit.
+- Gen 1: built a TPM-based Crypto API on top of the Microsoft TSS.CPP library.
+- Built a cloud service for license generation and license encryption, with cryptographic algorithms compatible with both TPM and HSM.
+- Delivered production-line encryption tools and production-line license tools supporting both TPM and HSM security modules.
+- Gen 2: brought up the TrustZone-based HSM security module, integrating TrustOS, Trust App, and the HSM PKCS#11 library.
+- Gen 2: built an HSM-based Crypto API on top of the HSM PKCS#11 library.
+- Designed the Gen 1/2 Crypto API layering to decouple the secure-chip communication layer from the Crypto API/Tool application layer.
 
 ## Cybersecurity for Vehicle Camera ECU
 
