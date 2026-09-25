@@ -29,6 +29,30 @@ Inceptio Technology, CA · Mar. 2026 - Aug. 2026
 - Developed an OpenSSL Provider wrapping PKCS#11 interfaces, enabling uniform Crypto and Key APIs that work across different Hardware Security Modules.
 - Built a conditional compilation pipeline to target-compile the same codebase across different hardware platforms.
 
+## Security Features for Lite Autonomous Driving Platform
+
+HSM · Secure Boot · eFuse
+Inceptio Technology, CA · Mar. 2025 - Jan. 2026
+
+- Developed security features for the lite autonomous driving platform (J6).
+- Verified the J6 HSM API and Crypto Accelerator API based on BSP functions.
+- Implemented the onboard security API: built the HSM abstraction layer for the J6 HSM and delivered EoL crypto tools for the J6 platform.
+- Delivered J6 secure boot: updated Inceptio's public and private keys, auto-generated the J6 eFuse binary, integrated signing tools into the build pipeline, and supported regression testing for eFuse enablement and secure boot build script updates.
+- Implemented an HSM abstraction layer for a virtual HSM, providing full HSM functionality on any platform — making crypto API bring-up easy for new platforms.
+- Supported passing the cybersecurity regulation: prepared documentation and developed the Java version of certificate API.
+
+## General Firmware Support for AI SoC
+
+U-Boot · OTA · kDump
+Inceptio Technology, CA · Feb. 2024 - Dec. 2024
+
+- Delivered general firmware support for the J5 AI SoC, covering boot, OTA, diagnostics, and build infrastructure.
+- Delivered a U-Boot feature to support J5 A/B side switch from the U-Boot console.
+- Delivered OTA and Triage support scripts for J5 and LX2160: OTA image filtering, J5 system status, LX2160/J5 security status, and J5 CAN status.
+- Enabled J5 OTA 2nd stage support with OTA package signature verification.
+- Optimized the J5 repository: aligned branch names to avoid pipeline failures, removed unused repos, added kDump support tools, refreshed outdated information, and provided Docker environments for the J5 build and vDSP build.
+- Delivered a minimal initramfs for J5/LX2160 to support kDump.
+
 ## Secure Boot for Multi-SoC ADCU
 
 Secure Boot · eFuse Provisioning · Cloud Signing Tools
