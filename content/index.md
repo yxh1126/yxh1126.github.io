@@ -13,8 +13,8 @@
 **Staff Embedded Security Engineer** · [Inceptio Technology](https://en.wikipedia.org/wiki/Inceptio_Technology)
 **Expertise** · Firmware · Secure Boot · Hardware Security · Cryptography
 
-> 👤 [Bio](#bio) · 🔧 [Skills](#skills) · 💼 [Experience](#experience)
-> 🧩 [Projects](#projects) · 🎓 [Education](#education) · 📄 [Resume](#resume)
+> 👤 [Bio](#bio) · 🔧 [Skills](#skills) · 🎓 [Education](#education)
+> 💼 [Experience](#experience) · 🧩 [Projects](#projects) · 📄 [Resume](#resume)
 > 👔 [LinkedIn](https://www.linkedin.com/in/yhtim) · 🐙 [GitHub](https://github.com/yxh1126)
 >
 > 2445 Augustine Dr. Suites 150
