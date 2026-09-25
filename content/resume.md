@@ -47,27 +47,19 @@ Security.
   - Vehicle ECU software development, including feature design, development,
     code review, and testing.
 
-## Key Projects
+## Recent Projects
 
 - **Security Features for L4 Autonomous Trucks** (PKI, Device Identity, HSM;
   Aug. 2026 - Present)
-  - Developing security features for the L4 autonomous truck platform.
-  - Designed and developed the platform software architecture supporting
-    multi-OEM certificate enrollment and verification.
-  - Developed Nvidia ThorX/ThorU device identity authentication based on
-    public/private key pairs.
-  - Adapted the HSM hardware crypto API on ThorX/ThorU, covering
-    encryption/decryption and certificate-related functionality.
-  - Supporting GitLab repository and Artifactory administration and management.
+- **Secure Lightweight Storage Engine** (C, Filesystem, Cryptography, Unix
+  Kernel; Feb. 2026 - May 2026)
 - **Hardware Security Abstraction Layer** (C, C++, PKCS#11, OpenSSL;
   Mar. 2026 - Aug. 2026)
-  - Architected a plug-and-play cryptographic abstraction layer for multi-SoC
-    platforms by implementing standardized PKCS#11 interfaces for heterogeneous
-    Hardware Security Devices.
-  - Developed an OpenSSL Provider wrapping PKCS#11 interfaces, enabling uniform
-    Crypto and Key APIs that work across different Hardware Security Modules.
-  - Built a conditional compilation pipeline to target-compile the same
-    codebase across different hardware platforms.
+- **Security Features for Lite Autonomous Driving Platform** (HSM, Secure
+  Boot, eFuse; Mar. 2025 - Jan. 2026)
+- **General Firmware Support for AI SoC** (U-Boot, OTA, kDump;
+  Feb. 2024 - Dec. 2024)
+- [See all projects --> **🖱️**](#projects)
 
 ## Education
 
