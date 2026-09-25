@@ -1,6 +1,6 @@
 # Skills
 
-## Languages
+## Languages & Libraries
 
 C, C++, OpenSSL, Python, Shell Scripting (Bash)
 

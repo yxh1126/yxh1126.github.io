@@ -20,8 +20,8 @@
 > 2445 Augustine Dr. Suites 150
 > Santa Clara, CA 95054
 
-**🕐 2000 "Talk is Cheap. Show me the code." --Linus Torvalds**
-**🕐 2026 "Code is Cheap. Show me the talk (prompt)." --AI**
+**🕐 2000 "Talk is Cheap. Show me the code." — Linus Torvalds**
+**🕐 2026 "Code is Cheap. Show me the talk (prompt)." — AI**
 
 *Dedicated to mastering low-level principles in an era where "Code is Cheap".
 Thrives on breathing life into cold hardware - from boot ROM to userspace.

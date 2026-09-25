@@ -18,7 +18,7 @@ Inceptio Technology, CA · Feb. 2026 - May 2026
 
 - Built upon a lightweight block filesystem optimized for minimalist, high-performance embedded systems.
 - Implemented block-level Full Disk Encryption (FDE) to secure the filesystem blocks against physical extraction.
-- Integrated a crypto verification chain using Merkle trees to check immutable system image integrity during runtime.
+- Integrated a crypto verification chain using Merkle trees to check immutable system image integrity at runtime.
 
 ## Hardware Security Abstraction Layer
 
@@ -106,7 +106,7 @@ Magna Electronics, MI · Nov. 2019 - Sep. 2020
 
 - Implemented the in-vehicle symmetric key management protocol defined by the SHE specification.
 - Implemented an intrusion detection system for the ECU in-vehicle network and logged intrusion events.
-- Implemented the AES-CMAC based ECU secure boot to protect the data in flash from unauthorized modification.
+- Implemented the AES-CMAC-based ECU secure boot to protect the data in flash from unauthorized modification.
 - Implemented the secure reprogramming protocol applied to both the ECU and reprogramming tools.
 
 ## Cybersecurity for Hybrid Vehicle Power Inverter
