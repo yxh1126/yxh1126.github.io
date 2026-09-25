@@ -26,11 +26,11 @@ Security.
 - **Staff Embedded Security Engineer, Inceptio Technology, Santa Clara, CA**
   (Sep. 2021 - Present)
   - Secure Boot and Secure OTA solutions tailored for diverse SoC architectures.
-  - Hardware Security (TPM, TEE, HSM/SHE) based solution for Data Storage &
+  - Hardware Security (TPM, TEE, HSM/SHE) based solutions for Data Storage &
     Secure Communication.
-  - System bring-up including Driver & Device Tree integration, Uboot updating
+  - System bring-up including Driver & Device Tree integration, U-Boot updating
     and peripheral validation.
-  - Asymmetrical key based Identity Authentication solution for AD (Autonomous
+  - Asymmetric-key-based identity authentication solution for AD (Autonomous
     Driving) hardware platform.
 - **Senior Firmware Engineer, Advanced Micro Devices, Santa Clara, CA**
   (Oct. 2020 - Aug. 2021)

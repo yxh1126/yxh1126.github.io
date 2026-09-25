@@ -39,7 +39,7 @@ Inceptio Technology, CA · Mar. 2025 - Jan. 2026
 - Implemented the onboard security API: built the HSM abstraction layer for the J6 HSM and delivered EoL crypto tools for the J6 platform.
 - Delivered J6 secure boot: updated Inceptio's public and private keys, auto-generated the J6 eFuse binary, integrated signing tools into the build pipeline, and supported regression testing for eFuse enablement and secure boot build script updates.
 - Implemented an HSM abstraction layer for a virtual HSM, providing full HSM functionality on any platform — making crypto API bring-up easy for new platforms.
-- Supported passing the cybersecurity regulation: prepared documentation and developed the Java version of certificate API.
+- Supported passing the cybersecurity regulation: prepared documentation and developed the Java version of the certificate API.
 
 ## General Firmware Support for AI SoC
 
@@ -89,24 +89,34 @@ Inceptio Technology, CA · Nov. 2021 - Nov. 2022
 - Gen 2: built an HSM-based Crypto API on top of the HSM PKCS#11 library.
 - Designed the Gen 1/2 Crypto API layering to decouple the secure-chip communication layer from the Crypto API/Tool application layer.
 
+## Endorsement Key Certificate Verification
+
+Firmware TPM · JNI · Linux Server
+Advanced Micro Devices, CA · Feb. 2021 - May 2021
+
+- Delivered Endorsement Key (EK) certificate verification: the firmware-side verification algorithm and the server-side certificate generation algorithm must match for the certificate verification regression tests to pass.
+- Updated the server's certificate signing algorithm to match the updated verification algorithm in the next firmware version.
+- Bridged the C firmware and the Java server with JNI: built the firmware sign algorithm into a Linux shared library (.so), wrapped it with JNI, and exposed it to the server's Java code.
+- Reusing the firmware implementation on the server ensured algorithm accuracy and identical behavior without a Java reimplementation — balancing accuracy, functionality, and workload.
+
 ## Cybersecurity for Vehicle Camera ECU
 
 SHE · AES-CMAC · Secure Boot
 Magna Electronics, MI · Nov. 2019 - Sep. 2020
 
 - Implemented the in-vehicle symmetric key management protocol defined by the SHE specification.
-- Implemented the intrusion detection applied to the ECU in-vehicle network and recorded the intrusion behavior.
+- Implemented an intrusion detection system for the ECU in-vehicle network and logged intrusion events.
 - Implemented the AES-CMAC based ECU secure boot to protect the data in flash from unauthorized modification.
-- Implemented the secure reprogramming protocol applied on both ECU and reprogramming tools.
+- Implemented the secure reprogramming protocol applied to both the ECU and reprogramming tools.
 
 ## Cybersecurity for Hybrid Vehicle Power Inverter
 
 AUTOSAR · HSM · Cryptography
 Delphi Technologies, MI · Feb. 2019 - Nov. 2019
 
-- Led the Cybersecurity SW in the project, analyzed customer requirements, and inquired solutions in the market.
-- Led and hosted cybersecurity trainings that introduced the basics of cryptography and authentication to the team.
-- Worked with the HSM, testing and integrating the Vector crypto software stacks to the current AUTOSAR.
+- Led the Cybersecurity SW in the project, analyzed customer requirements, and evaluated solutions in the market.
+- Led and hosted cybersecurity training sessions that introduced the basics of cryptography and authentication to the team.
+- Worked with the HSM, testing and integrating the Vector crypto software stacks into the current AUTOSAR.
 
 ## Hybrid Vehicle Power Inverter Software
 
@@ -116,7 +126,7 @@ Delphi Technologies, MI · Feb. 2018 - Feb. 2019
 - Designed and developed the hardware abstraction layer software for PWM control.
 - Implemented the PWM API on the NXP eMIOS module through object-oriented design.
 - Implemented the testability software that exchanges data between ECU and PC through CAN.
-- Developed Python tools to generate the memory report and integrated the script into the CMake build.
+- Developed Python tools to generate memory reports and integrated the script into the CMake build.
 
 ## EMS Software Development
 
@@ -134,8 +144,8 @@ OpenCV · C++ · Java RMI
 Rochester Institute of Technology, NY · Aug. 2014 - Sep. 2015
 
 - Designed an authentication system for Windows via Facial Recognition and Motion Detection.
-- Implemented the Face Recognition and Motion Detection using OpenCV library in C++.
-- Optimized performance by parallelizing the face recognition process on a computing cloud using Java RMI.
+- Implemented the Face Recognition and Motion Detection using the OpenCV library in C++.
+- Optimized performance by parallelizing the face recognition process on a cloud computing platform using Java RMI.
 
 ## Embedded Hardware Projects
 
